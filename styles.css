@@ -13,6 +13,7 @@
   --white-logo-color: hsl(196, 100%, 98%);
   --black-title-color: hsl(240, 6%, 13%);
   --black-text-color: hsl(0, 0%, 7%);
+  --purple-hover:hsl(300, 100%, 25%);
 
   font-family: "Mulish", sans-serif;
 }
@@ -161,6 +162,10 @@ aside h2 {
   border-radius: 5px;
 }
 
+.cats-info img:hover {
+  scale: 1.1;
+}
+
 .cats-info div {
   width: 100%;
   height: 100%;
@@ -173,6 +178,10 @@ aside h2 {
   line-height: 2.8rem;
 
   color: var(--black-title-color);
+}
+
+.cats-info h3:hover{
+  color: var(--purple-hover);
 }
 
 .cats-info p {
@@ -202,6 +211,11 @@ footer p {
 
   color: var(--white-main-color);
   text-align: center;
+}
+
+@keyframes move {
+  from {
+  }
 }
 
 @media (min-width: 768px) {
