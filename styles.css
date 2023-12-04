@@ -192,8 +192,6 @@ footer {
   background: var(--light-blue-color);
 
   padding: 1.6rem;
-
-  margin-top: 3.2rem;
 }
 
 footer p {
@@ -206,7 +204,7 @@ footer p {
   text-align: center;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   body {
     grid-template-areas:
       "header header"
@@ -231,7 +229,7 @@ footer p {
   main {
     grid-area: main;
 
-    padding: 0 0 0 11.2rem;
+    padding: 0 0 0 11rem;
 
     margin-top: 4.4rem;
   }
@@ -259,19 +257,15 @@ footer p {
   }
 
   aside {
+    grid-area: side;
+
     padding: 0;
     margin-right: 3.4rem;
     margin-top: 4.4rem;
 
-    gap: 3.2rem;
+    width: 90%;
 
-    width: 80%;
-  }
-
-  .aside-div {
-    grid-area: side;
-
-    padding: 0 0 0;
+    height: 100%;
   }
 
   .cats-div {
@@ -282,11 +276,13 @@ footer p {
   .cats-div img {
     object-fit: cover;
   }
-  
+
   footer {
     grid-area: footer;
 
     width: 100vw;
     height: 100%;
+
+    margin-top: 3.2rem;
   }
 }
